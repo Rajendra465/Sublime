@@ -10,5 +10,5 @@
 
 ## Team Name - Sublime
 ### Members:
-### Rajendra Sarpal
-### Vishant Nambiar
+* Rajendra Sarpal
+* Vishant Nambiar
