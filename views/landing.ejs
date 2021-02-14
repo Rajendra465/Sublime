@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+    <section class="sec-1">
+        <div class="sec-1-bg">
+            <h1>SureLearn</h1>
+            <p>Learn Anything</p>
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="sec-2-bg">
+            <p>You only have to learn one thing:</p>
+            <img src="\assets\img\graduation-cap.png" alt="">
+            <h2>You Can Learn <span style='border-bottom: 5px solid white;'>Anything</span></h2>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="sec-3-bg">
+            <h3>The power of Learning</h3>
+            <p>Learning is the lifelong inherent human activity that has brought us to the forefront as a species.</p>
+            <p>Our mission is to use the insane power of Active Learning and advanced Artificial Intelligence make you a fast, durable, but most importantly, <em><u>independent</u></em>  learner. </p>
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="sec-4-bg">
+            <h3>Active Learning</h3>
+            <p>This is the incredibly powerful scientifically proven way to learn anything.</p>
+            <p>It emphasizes doing, and not just seeing or reading.</p>
+        </div>
+    </section>
+    <section class="sec-5">
+        <div class="sec-5-bg">
+            <h3>AI Charged Learning <img src="\assets\img\ai.png" alt=""></h3>
+            <p>Our unique machine learning system ensures that you learn the most important concepts of whatever you wish to learn,that you test yourself in the most efficient manner and most importantly, you do it without requiring any help.</p>
+        </div>
+    </section>
+    <section class="sec-6">
+        <div class="sec-6-bg">
+            <h3>So how does it work?</h3>
+            <img style="margin-top: 20px;" src="\assets\img\settings.png" alt="">
+            <div class='first-second-third-grid'>
+                <div>
+                    <p class="grid-title">FIRST</p>
+                    <p>You choose what you would like to study and the material that you're gonna study from, be it video, audio or text.</p>
+                </div>
+                <div>
+                    <p class="grid-title">SECOND</p>
+                    <p>You study the material and give it a proper go-through atleast once.</p>
+                </div>
+                <div>
+                    <p class="grid-title">THIRD</p>
+                    <p>You upload the material onto SureLearn, then we process it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-7">
+        <div class="sec-7-bg">
+            <h3>Then, the magic happens <img src="\assets\img\hat.png" alt=""></h3>
+            <p style="margin-top: 30px;">Our custom Machine Learning models process your material and generate important summaries and points for your active recall</p>
+            <p>Then, you are given an AI smart test. What makes this test stand out is that it is auto-generated, and keeps continually changing for you when you are taking it. Some smart analytics are generated to help you get a grasp of your perfomance and areas you can work on.</p>
+        </div>
+    </section>
+    <section class="sec-8">
+        <div class="sec-8-bg">
+            <h3>So what are you waiting for?</h3>
+            <p>Head below to get started with <span style="font-family: 'Great Vibes', cursive;">SureLearn!</span></p>
+        </div>
+    </section>
+    <section class="sec-9">
+        <div class="sec-9-bg">
+            <h3>Get started learning!</h3>
+            <h4>Upload your material in the format you wish.</h4>
+            <input type="text" name="title" class="form-title" placeholder="Enter a title for your material">
+
+            <div class="form-grid">
+                <form action="/text" method='POST'>
+                    <p>Upload text material:</p>
+                    <textarea name="passage"  cols="50" rows="11" placeholder="Type or paste your text material here..." required></textarea>
+                    <button class="upload-btn" type="submit">Submit text for analysis</button>
+                    <input type="hidden" name="title" class="hidden-title" value="">
+                </form>
+                <form action="/audio" method='POST' enctype="multipart/form-data">
+                    <p>Upload the audio you would like to learn from:</p>
+                    <label class="custom-file-upload">
+                        <input type="file" name="audeo" accept="audio/*" required>
+                        Upload Audio
+                    </label>
+                    <button class="upload-btn" type="submit">Submit audio for analysis</button>
+                    <input type="hidden" name="title" class="hidden-title" value="">
+                </form>
+                <form action="/video" method='POST' enctype="multipart/form-data">
+                    <p>Upload the video that you would like to learn from:</p>
+                    <label class="custom-file-upload">
+                        <input type="file" name="video" accept="video/*" required>
+                        Upload Video
+                    </label>
+                    
+                    <button class="upload-btn" type="submit">Submit video for analysis</button>
+                    <input type="hidden" name="title" class="hidden-title" value="">
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        document.querySelectorAll('.upload-btn').forEach((x) => {
+            x.addEventListener('click', (e) => {
+                document.querySelector('input[type="hidden"]').setAttribute('value', document.querySelector('.form-title').value );
+
+            });
+        });
+    </script>
+</body>
+</html> 

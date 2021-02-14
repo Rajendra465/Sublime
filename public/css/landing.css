@@ -1,0 +1,450 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.sec-1 {
+    background-image: url('https://i.pinimg.com/originals/79/c0/c6/79c0c691e7ddea72c7632019b75ff890.jpg');
+    background-repeat: no-repeat;
+    height: 780px;
+    background-size: 100% 100%;
+}
+
+
+
+.sec-1-bg {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(5, 232, 186, 0.4);  */
+    background: linear-gradient(rgba(67, 206, 162, 0.7), rgba(24, 90, 157, 0.7));
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sec-1-bg h1 {
+    font-size: 8rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+
+.sec-1-bg p {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/***********************************************************/
+
+
+
+
+.sec-2 {
+    height: 700px;
+}
+
+
+
+
+
+.sec-2-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #38bdd4;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+
+.sec-2-bg p {
+    font-size: 35px;
+}
+
+
+.sec-2-bg h2 {
+    font-size: 5rem;
+    font-family: 'Allura', cursive;
+}
+
+
+
+
+/**************************************************************/
+
+
+
+
+
+.sec-3 {
+    height: 700px;
+    
+    background-color: rgba(22, 199, 154, 1);
+}
+
+
+
+.sec-3-bg {
+    height: 100%;
+    width: 100%;
+    background: url('/assets/img/question-mark.png') center no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+.sec-3-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-3-bg p {
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*******************************************************************************/
+
+
+
+
+
+.sec-4 {
+    height: 700px;
+    background: url('https://static.wixstatic.com/media/182e93_9de6f5668f2c4dd79e77bd28b3c3e912~mv2.jpg') top center no-repeat;
+}
+
+
+
+.sec-4-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(15, 173, 94, 0.4);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-4-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-4-bg p {
+    font-size: 25px;
+    outline: black 1px;
+}
+
+
+
+
+
+
+/*************************************************************************/
+
+
+
+
+
+.sec-5 {
+    height: 700px;
+
+}
+
+
+
+.sec-5-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #007965;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 300px;
+}
+
+
+.sec-5-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-5-bg p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+/***********************************************************************/
+
+
+
+
+
+.sec-6 {
+    height: 800px;
+}
+
+
+
+
+.sec-6-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 175, 145, 1);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-6-bg h3 {
+    font-size: 3rem;
+}
+
+
+.first-second-third-grid {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+
+
+.grid-title {
+    font-size: 4rem;
+}
+
+
+/***********************************************************************/
+
+
+
+
+
+.sec-7 {
+    height: 700px;
+}
+
+
+
+.sec-7-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #19456b;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 110px;
+}
+
+
+.sec-7-bg h3 {
+    font-size: 5rem;
+}
+
+
+.sec-7-bg p {
+    font-size: 18px;
+}
+
+
+
+
+
+/******************************************************************************************/
+
+
+
+
+
+.sec-8 {
+    height: 700px;
+}
+
+
+
+.sec-8-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #01c5c4;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-8-bg h3 {
+    font-size: 3rem;
+}
+
+
+.sec-8-bg p {
+    font-size: 4rem;
+}
+
+
+
+
+
+/************************************************************************************/
+
+
+
+
+
+.sec-9 {
+    height: 600px;
+}
+
+
+
+
+.sec-9-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #050546;
+    background-image: linear-gradient(315deg, #009ffd 74%, #2a2a72 0%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+
+
+.form-grid {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 20px 0;
+}
+
+
+.form-grid>* {
+    text-align: left;
+    line-height: 2;
+}
+
+
+.form-grid *{
+    display: block;
+}
+
+
+
+
+.form-title {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: grey 1px solid;
+    width: 300px;
+    margin-top: 30px;
+    line-height: 2rem;
+}
+
+.form-title::placeholder {
+    color: honeydew;
+    font-size: 20px;
+}
+
+.form-title:focus {
+    outline: none;
+}
+
+
+
+.upload-btn {
+    border: 2px solid gray;
+    color: #12672c;
+    background-color: rgb(25 206 161);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0.5;
+}
+
+
+textarea {
+    background-color: rgb(94 181 222);
+}
+textarea::placeholder {
+    color: black;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline;
+    border: 3px blue solid;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+.sec-9-bg h3 {
+    font-size: 3rem;
+}
+
+.sec-9-bg h4 {
+    font-size: 2rem;
+}
