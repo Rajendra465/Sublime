@@ -11,8 +11,8 @@
 - jsonschema==3.2.0
 - requests==2.25.0
 
-## Custom AI/ML based recommendation based model to track student's exam giving pattern which recommends questions by focusing more on 'Weak Sections' while maintaing balance with 'Strong Sections'.
-### NLP to Extract Questions, Summary & Important Points
+## Custom AI/ML based recommendation system to track student's exam giving pattern which recommends questions by focusing more on 'Weak Sections' while maintaing balance with 'Strong Sections'.
+## NLP to Extract Questions, Summary & Important Points
 ### APIs Sources:
 ### * RapidAPI
 ### * DeepAI
