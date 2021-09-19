@@ -19,7 +19,7 @@ r = requests.post(
     data={
         'text': text,
     },
-    headers={'api-key': '2cfaddf9-f1e7-47da-bdc8-017101626281'}
+    headers={'api-key': '<key>'}
 )
 bp = r.json()
 
@@ -27,7 +27,7 @@ bp = r.json()
 
 
 headers = {
-    'x-rapidapi-key': "f2eed9bfd0msh2e7b8e60c2912d1p126f44jsn176f4a33b42d",
+    'x-rapidapi-key': "<key>",
     'x-rapidapi-host': "question-generator.p.rapidapi.com"
     }
 
